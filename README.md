@@ -44,4 +44,4 @@
 ## Dicas
 ### Listar ID containers
 - $(docker ps -q)
-	>  Ex: *docker stop $(docker ps -a)* - faz parar todos os containers que estão rodando.
+	>  Ex: *docker stop $(docker ps -q)* - faz parar todos os containers que estão rodando.
