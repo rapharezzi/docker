@@ -40,3 +40,8 @@
 - *docker-compose build* - Realiza o build dos serviços relacionados ao arquivo docker-compose.yml, assim como verifica a sua sintaxe.
 - *docker-compose up* - Sobe todos os containers relacionados ao docker-compose, desde que o build já tenha sido executado.
 - *docker-compose down* - Para todos os serviços em execução que estejam relacionados ao arquivo docker-compose.yml.
+
+## Dicas
+### Listar ID containers
+- $(docker ps -q)
+	>  Ex: *docker stop $(docker ps -a)* - faz parar todos os containers que estão rodando.
