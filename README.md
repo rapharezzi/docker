@@ -45,3 +45,11 @@
 ### Listar ID containers
 - $(docker ps -q)
 	>  Ex: *docker stop $(docker ps -q)* - faz parar todos os containers que estão rodando.
+
+# Definindo Volume
+*["\[...\] volumes são o mecanismo preferencial para persistir os dados gerados e usados por contêineres Docker."*
+*"\[...\] os volumes costumam ser uma escolha melhor do que persistir os dados na camada gravável de um contêiner, porque um volume não aumenta o tamanho dos contêineres que o utilizam, e o conteúdo do volume existe fora do ciclo de vida de um determinado contêiner."](https://docs.docker.com/storage/volumes/)*
+
+    $ docker run -v "/home/user/site:/var/wwww" [image]
+"/home/user/site" indica um local no *host*, enquanto que "/var/www" aponta para uma pasta dentro do container.
+	
